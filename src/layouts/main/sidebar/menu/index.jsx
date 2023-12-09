@@ -6,12 +6,16 @@ import classNames from "classnames";
 import { mainMenu } from "~/utils/consts";
 import More from "./more";
 import New from "./new";
+import { useAccount } from "~/store/auth/hooks";
 
 export default function Menu() {
+
+  const account = useAccount();
+
   return (
-    <nav className="mt-0.5 mb-1">
+    <nav className="mt-0.5 mb-1" key={account.id}>
       {mainMenu.map((menu, index) => (
-        <NavLink key={index} to={menu.path} className="py-1 block group">
+        <NavLink key={index} to={typeof menu.path === 'function' ? menu.path() : menu.path} className="py-1 block group">
           {({ isActive }) => (
             <div
               className={classNames(

@@ -8,7 +8,18 @@ const initialState = {
 		avatar: 'https://pbs.twimg.com/profile_images/1720615915610329088/GyrwfbTJ_400x400.jpg'
 	},
 	accounts: [
-		
+		{
+			id: 1,
+			username: 'murathanalgir',
+			fullName: 'Murathan ALGIR',
+			avatar: 'https://pbs.twimg.com/profile_images/1720615915610329088/GyrwfbTJ_400x400.jpg'
+		},
+		{
+			id: 2,
+			username: 'megwroses',
+			fullName: 'mel🌊',
+			avatar: 'https://pbs.twimg.com/profile_images/1638329373550866432/3JF76zET_400x400.jpg'
+		}
 	]
 }
 
