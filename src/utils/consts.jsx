@@ -1,6 +1,24 @@
 import store from "~/store";
 
 
+export const topic = [
+  {
+    title: "Türkiye tarihinde gündemde",
+    topic: {
+      type: "tag",
+      value: "UlasCoskunTutuklansın"
+    }
+  },
+  {
+    title: "Türkiye tarihinde gündemde",
+    topic: {
+      type: "query",
+      value: "Somali Cumhurbaşkanı"
+    },
+    postCount: 47800
+  },
+]
+
 export const mainMenu = [
   {
     path: "/",
