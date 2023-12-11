@@ -1,8 +1,13 @@
 import { Outlet } from "react-router-dom";
 import Sidebar from "./sidebar";
 import RightBar from "./rightbar";
+import {useModal} from "~/store/modal/hooks.js";
 
 export default function MainLayout () {
+
+    const modal = useModal()
+    console.log(modal)
+
     return (
         <div className="w-[1265px] mx-auto flex">
             <Sidebar/>

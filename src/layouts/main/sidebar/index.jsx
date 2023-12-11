@@ -9,5 +9,6 @@ export default function Sidebar () {
             <Menu/>
             <Account />
         </aside>
+
     )
 }
